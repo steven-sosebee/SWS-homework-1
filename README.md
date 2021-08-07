@@ -1,101 +1,99 @@
-# 01 HTML CSS Git: Code Refactor
+# Horiseon Home Page
 
-## Your Task
+## Change Log
 
-**Note**: Be sure to review the [Homework Guide](../important/Homework-Guide/README.md) and the [Good README Guide](../important/Good-README-Guide/README.md) before you start working on this assignment!
+* Refactored HTML to be more accessible.  See Elements section for more details.
 
-This week is an odd-numbered week, so your homework is an on-the-job ticket, which means you'll begin with starter code that you need to modify. This week's homework involves a very important aspect of web development: **accessibility**. 
+* Added alt tags for images for screen reader accessibility
 
-One of the most common tasks for front-end and junior developers is to take existing code and refactor it (recall that to refactor code is to improve it without changing what it does) to meet a certain set of standards or implement a new technology. In this homework, a marketing agency has hired you to refactor an existing site to make it more accessible. 
-
-Web accessibility is an increasingly important consideration for businesses. It ensures that people with disabilities can access a website using assistive technologies such as video captions, screen readers, and braille keyboards. Making a website accessible is also good for business for many reasons, one of them being that accessible sites are better positioned in search engines like Google. It also helps companies avoid litigation that can occur when people with disabilities cannot access their website.
-
-Even though accessibility is a broad topic that can include complex requirements, your tech lead has given you a small list of specific criteria to satisfy the project. These criteria are documented below in the Acceptance Criteria.
-
-**Important**: An important rule to follow when working with someone else's code is the **Scout Rule**, which recommends that you always leave the code a little cleaner than when you found it.
-
-To impress clients, you should always go the extra mile and improve the codebase for long-term sustainability. For example, make sure that all links are functioning correctly. Also, rework the CSS to make it more efficient by consolidating CSS selectors and properties, organizing them to follow the semantic structure of the HTML elements, and including comments before each element or section of the page.
-
-Are you ready to jump in? Here are this week's homework requirements:
-
-## User Story
+## Semantic Elements Used
 
 ```
-AS A marketing agency
-I WANT a codebase that follows accessibility standards
-SO THAT our own site is optimized for search engines
+<header> - designates heading including navigation bar elements
+<navbar> - designates the navigation bar section and links
+<section> - used for separating body sections
+<aside> - used for side table along the main sections
+<footer> - designated footer section
 ```
 
-## Acceptance Criteria
+## Image Tags
 
-```
-GIVEN a webpage meets accessibility standards
-WHEN I view the source code
-THEN I find semantic HTML elements
-WHEN I view the structure of the HTML elements
-THEN I find that the elements follow a logical structure independent of styling and positioning
-WHEN I view the image elements
-THEN I find accessible alt attributes
-WHEN I view the heading attributes
-THEN they fall in sequential order
-WHEN I view the title element
-THEN I find a concise, descriptive title
-```
+Alt tags used for images to aid in screen reader recognition.
 
-## Mock-Up
+## Submission Details
 
-The following image shows the web application's appearance and functionality:
+![Reference Page](./assets/images/page-reference.jpg)
 
-![code refactor demo](./assets/01-html-css-git-homework-demo.png)
+![Github Repo](./assets/images/github-repo.jpg)
 
+[Github Link](https://github.com/steven-sosebee/SWS-homework-1)
 
-## Grading Requirements
-
-This homework is graded based on the following criteria: 
+[Live Link](https://steven-sosebee.github.io/SWS-homework-1/)
 
 ### Technical Acceptance Criteria: 40%
 
 * Satisfies all of the above acceptance criteria plus the following code improvements:
 
   * Application's links all function correctly.
+    ```
+    <a href="#search-engine-optimization">Search Engine Optimization</a>
+
+    <a href="#online-reputation-management">Online Reputation Management</a>
+    
+    <a href="#social-media-marketing">Social Media Marketing</a>
+    ```
 
   * Application's CSS selectors and properties are consolidated and organized to follow semantic structure.
+  [style CSS file](./assets/css/style.css)
 
   * Application's CSS file is properly commented.
+    * Comments added to group CSS styles
+      ```
+      /* Header and navigation bar styles */
+      
+      header {
+      padding: 20px;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      background-color: #2a607c;
+      color: #ffffff;
+      }
+      ```
 
 ### Deployment: 32%
 
 * Application deployed at live URL.
+  [Live Link](https://steven-sosebee.github.io/SWS-homework-1/)
 
 * Application loads with no errors.
 
 * Application GitHub URL submitted.
-
+  
+    [Github Link](https://github.com/steven-sosebee/SWS-homework-1)
 * GitHub repository that contains application code.
+
+  ![Github Repo](./assets/images/github-repo.jpg)
 
 ### Application Quality: 15%
 
 * Application resembles (at least 90%) screenshots provided in the homework instructions.
+  ![Reference Page](./assets/images/page-reference.jpg)
 
 ### Repository Quality: 13%
 
-* Repository has a unique name.
+- [x] Repository has a unique name: **SWS-Homework-1**
 
-* Repository follows best practices for file structure and naming conventions.
+- [x] Repository follows best practices for file structure and naming conventions.
 
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
+- [x] Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
 
-* Repository contains multiple descriptive commit messages.
+- [x] Repository contains multiple descriptive commit messages.
 
-* Repository contains quality README file with description, screenshot, and link to deployed application.
+- [x] Repository contains quality README file with description, screenshot, and link to deployed application.
 
 ## Review
 
 You are required to submit the following for review:
 
-* The URL of the deployed application.
+- [x] The URL of the deployed application.
 
-* The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
-
-- - -
-© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+- [x] The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
